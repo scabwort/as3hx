@@ -1203,7 +1203,7 @@ class Writer
 					writeTestVar = true;
 					testVar = "_sw"+(varCount++)+"_";
 				}
-				if(def != null) {
+				if(def != null && def.length > 0) {
 					switch(def[def.length-1]) {
 						case EBreak(lbl):
 							if(lbl == null) 
